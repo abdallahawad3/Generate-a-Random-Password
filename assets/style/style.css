@@ -32,6 +32,33 @@ body {
 .container .show {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.container .show .copy {
+  position: absolute;
+  right: -20px;
+  top: -40px;
+  color: #F1FAEE;
+  z-index: 5;
+  background-color: #457B9D;
+  padding: 5px 10px;
+  border-radius: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.container .show .copy i {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 2px;
+  height: 0px;
+  z-index: -1;
+  font-size: 20px;
 }
 
 .container .show .input {
@@ -58,7 +85,6 @@ body {
   color: #5FD068;
   font-size: 23px;
   cursor: pointer;
-
 }
 
 .container .show button {
