@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #041C32;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+  width: 400px;
+}
+
+.container h1 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.container h1 span {
+  color: #5FD068;
+  border-bottom: 3px solid #5FD068;
+}
+
+.container .show {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .show .input {
+  width: 150%;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.container .show .input input{
+  width: 100%;
+  padding: 15px 10px;
+  outline: 0;
+  border: 3px solid #4CACBC ;
+  border-radius: .2rem;
+  height: 100%;
+}
+
+.container .show .input i {
+  position: absolute;
+  right: 15px;
+  color: #5FD068;
+  font-size: 23px;
+  cursor: pointer;
+
+}
+
+.container .show button {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #5FD068;
+  outline: 0;
+  border: 1px solid #5FD068;
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+
+.container .show button::before {
+  font-family: "Font Awesome 6 free"; 
+  content: "\f0e7";
+  position: absolute;
+  font-weight: 600;
+  color: #FFF;
+  font-size: 16px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+} 
